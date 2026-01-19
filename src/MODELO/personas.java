@@ -15,10 +15,6 @@ public class personas {
         this.direccion = direccion;
     }
     
-    public void presentarse(){
-        System.out.println("hola, mucho gusto soy " +getNombre());
-    }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -57,5 +53,9 @@ public class personas {
 
     public String getDireccion() {
         return direccion;
+    }
+    
+    public void presentarse(){
+        System.out.println("Hola, soy " + getNombre() + " " + getApellido() + ", un gusto conocerte");
     }
 }
